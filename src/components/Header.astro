@@ -1,0 +1,52 @@
+---
+
+---
+<header class="w-full h-auto absolute top-0 flex md:flex-row flex-col justify-between items-center text-center z-30">
+
+    <div class="w-full md:w-2/3 h-auto flex justify-center items-center mt-6">
+        <a href="/" class="w-auto h-auto"><img src="/img/Logo.png" alt="LogoMP" class="w-[90px] h-[90px]"></a>
+    </div>
+
+    <nav class="w-full md:w1/3 h-auto flex md:flex-row flex-col justify-center md:justify-end md:gap-10 mt-6 text-white">
+
+        <div class="w-auto h-auto flex md:flex-row flex-col justify-end md:mr-24 md:gap-10 gap-3">
+            <a href="#AboutMauricio" class="w-auto h-auto font-normal underline-animated text-lg smooth-scroll">About me</a>
+            <a href="#ProjectsMauricio" class=" w-auto h-autofont-normal underline-animated text-lg smooth-scroll">Contact</a>
+            <a href="#" class="w-auto h-auto font-normal underline-animated text-lg">Projects</a>
+            <a href="#" class="w-auto h-auto font-normal underline-animated text-lg">Download CV</a>
+        </div>
+
+    </nav>
+
+</header>
+
+<style>
+
+    .underline-animated {
+        position: relative;
+        display: inline-block;
+        flex-wrap: wrap;
+        text-decoration: none;
+        align-self: center;
+    }
+
+    .underline-animated::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: currentColor;
+        width: 100%;
+        max-width: 100%;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        transform-origin: bottom left;
+        pointer-events: none;
+    }
+
+    .underline-animated:hover::after {
+        transform: scaleX(1);
+    }
+
+</style>
