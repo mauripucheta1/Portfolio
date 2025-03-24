@@ -1,159 +1,337 @@
 ---
 
 ---
+<section class="relative w-full h-auto flex flex-col justify-between bg-white z-10">
+    
+    <div class="w-[900px] h-auto flex flex-col justify-center items-center text-center m-auto">
+
+        <div id="rotating-border" class="w-[250px] h-[250px] rounded-full mt-8 relative">
+            <div class="absolute inset-0 border-[4px] border-[#3B88C3] border-t-transparent rounded-full spin-container"></div>
+            <img src="img/FotoMauri.png" alt="Imagen de Mauri" class="w-full h-full rounded-full object-cover">
+        </div>
+
+        <div class="w-auto h-auto flex justify-center items-center text-center mt-4">
+            <p class="text-8xl text-[#3B88C3] opacity-0 transition-all duration-1000" id="about-me">About me</p>
+        </div>
+
+        <div class="menu-trigger bg-[#3B88C3] w-auto h-auto rounded-r-xl cursor-pointer absolute left-0">
+            <svg class="p-2 transition-transform duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" 
+            stroke-linejoin="round" width="40" height="40" stroke-width="2">
+                <path d="M12 9v-3.586a1 1 0 0 1 1.707 -.707l6.586 6.586a1 1 0 0 1 0 1.414l-6.586 6.586a1 1 0 0 1 -1.707 -.707v-3.586h-3v-6h3z"></path>
+                <path d="M3 9v6"></path>
+                <path d="M6 9v6"></path>
+            </svg>
+        </div>
+
+        <div class="side-content flex flex-col gap-6 left-[-100%] w-auto h-auto bg-[#3B88C3] text-white transition-all duration-700 absolute rounded-lg">
+
+            <div class="w-auto h-auto flex justify-center items-center text-center p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                    <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"></path>
+                    <path d="M6.343 17.657l-1.414 1.414"></path>
+                    <path d="M6.343 6.343l-1.414 -1.414"></path>
+                    <path d="M17.657 6.343l1.414 -1.414"></path>
+                    <path d="M17.657 17.657l1.414 1.414"></path>
+                    <path d="M4 12h-2"></path>
+                    <path d="M12 4v-2"></path>
+                    <path d="M20 12h2"></path>
+                    <path d="M12 20v2"></path>
+                  </svg>
+            </div>
+
+            <div class="w-auto h-auto flex justify-center items-center text-center p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                    <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+                  </svg>
+            </div>
+            
+        </div>
+
+        <div class="w-full h-auto flex justify-center items-center text-center mt-4">
+            <p class="text-black text-xl px-6">I am from Colonia Caroya -Córdoba, graduated as a Software Developer from the Siglo XXI University. Currently, my interests are based on 
+                Web Development, both FrontEnd and BackEnd. I consider myself a person predisposed to learning new technologies, with a high level of optimism, capable of achieving continuous 
+                improvements and promoting teamwork with total responsibility.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="relative w-full h-auto flex flex-col justify-center items-center text-start px-5 m-auto mt-10 z-10 overflow-hidden">
+
+    <!--Gradiente-->
+    <div class="absolute inset-0 w-full h-[80%] bg-gradient-to-b from-white to-[#3B88C3] z-0"></div>
+
+    <!--Contenedor de tarjetas-->
+    <div class="w-full h-auto flex flex-row justify-center items-stretch text-center gap-12 z-10">
+
+        <!--Tarjeta FrontEnd-->
+        <div class="w-1/4 h-auto flex flex-col justify-start items-center text-center bg-white rounded-lg mt-10 border border-gray-200 sombraTarjeta mb-10">
+
+            <div class="w-[90px] h-[90px] flex justify-center items-center rounded-full bg-[#3B88C3] mt-16">
+                <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="60" height="60" 
+                stroke-width="1">
+                    <path d="M7 8l-4 4l4 4"></path>
+                    <path d="M17 8l4 4l-4 4"></path>
+                    <path d="M14 4l-4 16"></path>
+                    </svg>
+            </div>
+
+            <div class="w-full h-auto flex justify-center items-center text-center mt-5">
+                <p class="text-black text-2xl">FrontEnd Developer</p>
+            </div>
+
+            <div class="w-full h-auto flex justify-center items-center text-center mt-10">
+                <p class="text-black text-lg font-light px-10">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            </div>
+
+            <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-10">
+                <p class="text-black text-lg">Languages I speak:</p>
+                <p class="text-[#3B88C3] mt-2">HTML5, CSS3, JavaScript</p>
+            </div>
+
+            <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-5 mb-5">
+                <p class="text-black text-lg">FrontEnd Tools:</p>
+                <a href="https://code.visualstudio.com/" target="_blank" class="w-auto h-auto mt-2 text-[#3B88C3]">VS Code</a>
+                <a href="https://astro.build/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Astro</a>
+                <a href="https://tailwindcss.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Tailwind</a>
+                <a href="https://getbootstrap.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Boostrap</a>
+                <a href="https://sass-lang.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Sass</a>
+                <a href="https://www.typescriptlang.org/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Typescript</a>
+                <a href="https://react.dev/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">React</a>
+                <a href="https://vuejs.org/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Vue.js</a>
+                <a href="https://www.postman.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Postman</a>
+                <a href="https://www.npmjs.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">npm</a>
+            </div>
+
+        </div>
+
+        <!--Tarjeta BackEnd-->
+        <div class="w-1/4 min-h-[600px] h-auto flex flex-col justify-start items-center text-center bg-white rounded-lg mt-10 border border-gray-200 sombraTarjeta mb-10">
+
+            <div class="w-[90px] h-[90px] flex justify-center items-center rounded-full bg-[#3B88C3] mt-16">
+                <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="60" height="60" 
+                    stroke-width="1">
+                    <path d="M12 6m-8 0a8 3 0 1 0 16 0a8 3 0 1 0 -16 0"></path>
+                    <path d="M4 6v6a8 3 0 0 0 16 0v-6"></path>
+                    <path d="M4 12v6a8 3 0 0 0 16 0v-6"></path>
+                    </svg>
+            </div>
+
+            <div class="w-full h-auto flex justify-center items-center text-center mt-5">
+                <p class="text-black text-2xl">BackEnd Developer</p>
+            </div>
+
+            <div class="w-full h-auto flex justify-center items-center text-center mt-10">
+                <p class="text-black text-lg font-light px-10">I enjoy building robust systems to bring ideas to life invisibly.</p>
+            </div>
+
+            <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-10">
+                <p class="text-black text-lg">Languages I speak:</p>
+                <p class="text-[#3B88C3] mt-2">SQL, NoSQL</p>
+            </div>
+
+            <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-5 mb-5">
+                <p class="text-black text-lg">BackEnd Tools:</p>
+                <a href="https://www.postgresql.org/" target="_blank" class="w-auto h-auto mt-2 text-[#3B88C3]">PostgreSQL</a>
+                <a href="https://www.mongodb.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">MongoDB</a>
+                <a href="https://www.sqlite.org/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">SQLite</a>
+                <a href="https://nodejs.org/en" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Node.js</a>
+                <a href="https://expressjs.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Express.js</a>
+                <a href="https://laravel.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Laravel</a>
+                <a href="https://graphql.org/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">GrapQL</a>
+                <a href="https://firebase.google.com/?hl=es-419" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Firebase</a>
+                <a href="https://nestjs.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Nest.js</a>
+                <a href="https://github.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Git - GitHub - GitLab - GitBash</a>
+            </div>
+
+        </div>
+
+        <!--Tarjeta UX/UI-->
+        <div class="w-1/4 min-h-[600px] h-auto flex flex-col justify-start items-center text-center bg-white rounded-lg mt-10 border border-gray-200 sombraTarjeta mb-10">
+
+            <div class="w-[90px] h-[90px] flex justify-center items-center rounded-full bg-[#3B88C3] mt-16">
+                <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="60" height="60" 
+                    stroke-width="1">
+                    <path d="M6 21l15 -15l-3 -3l-15 15l3 3"></path>
+                    <path d="M15 6l3 3"></path>
+                    <path d="M9 3a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"></path>
+                    <path d="M19 13a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"></path>
+                      </svg>
+            </div>
+
+            <div class="w-full h-auto flex justify-center items-center text-center mt-5">
+                <p class="text-black text-2xl">Designer</p>
+            </div>
+
+            <div class="w-full h-auto flex justify-center items-center text-center mt-10">
+                <p class="text-black text-lg font-light px-10">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+            </div>
+
+            <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-10">
+                <p class="text-black text-lg">Things I enjoy designing:</p>
+                <p class="text-[#3B88C3] mt-2">UX, UI, Web, Apps, Logos</p>
+            </div>
+
+            <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-5 mb-5">
+                <p class="text-black text-lg">Design Tools:</p>
+                <a href="https://www.figma.com/" target="_blank" class="w-auto h-auto mt-2 text-[#3B88C3]">Figma</a>
+                <a href="https://www.canva.com/" target="_blank" class="w-auto h-auto mt-2 text-[#3B88C3]">Canva</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 <!--
-<main class="w-full md:h-[1950px] absolute flex bg-black">
-    <section class="md:w-[600px] md:h-[800px] md:ml-[120px] rounded-b-3xl top-0 bg-[#111111] justify-center items-center text-center z-10 sombraVioleta" id="AboutMauricio">
-        <div class="absolute flex md:w-[600px] md:h-[150px] justify-center items-center text-center">
-            <p class="capitalize text-gray-400 text-8xl">Aboute me</p>
-        </div>
-        <div class="absolute flex md:w-[600px] md:h-[60px] md:mt-[150px] justify-center items-center text-center">
-            <div class="md:w-[200px] md:h-[60px] flex justify-center items-center text-center">
-                <p class="text-white text-xl">20 years old</p>
-            </div>
-            <div class="md:w-[200px] md:h-[60px] flex justify-center items-center text-center">
-                <a href="" target="blank"><p class="text-white text-xl">Córdoba, Argentina</p></a>
-            </div>
-            <div class="md:w-[200px] md:h-[60px] flex justify-center items-center text-center">
-                <p class="text-white text-xl">Freelancer</p>
-            </div>
-        </div>
-        <div class="md:w-[600px] md:h-[150px] flex justify-center items-center text-center md:mt-[210px]">
-            <p class="text-white text-xl p-10">About me, I am from Colonia Caroya -Córdoba, graduated as a Software Developer from the Siglo XXI University. Currently, my interests are based on Web Development, 
-                both FrontEnd and BackEnd.
-            </p>
-        </div>
-        <div class="md:w-[600px] md:h-[100px] flex justify-center text-center">
-            <div class="md:w-[300px] md:h-[100px] flex justify-start items-center text-center">
-                <p class="text-gray-400 text-4xl md:ml-[40px]">Person details</p>
-            </div>
-            <div class="md:w-[300px] md:h-[100px] flex justify-start items-center text-center">
-                <p class="text-gray-400 text-4xl md:ml-[40px]">My interests</p>
-            </div>
-        </div>
-        <div class="md:w-[600px] md:h-[150px] flex justify-center items-center text-center">
-            <div class="md:w-[300px] md:h-[150px] inline-block justify-center items-center text-center">
-                <div class="md:w-[300px] md:h-[50px] flex">
-                    <div class="md:w-[100px] md:h-[50px] flex justify-center items-center gap-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" 
-                            stroke-width="2">
-                            <path d="M3 20h18v-8a3 3 0 0 0 -3 -3h-12a3 3 0 0 0 -3 3v8z"></path>
-                            <path d="M3 14.803c.312 .135 .654 .204 1 .197a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1c.35 .007 .692 -.062 1 -.197"></path>
-                            <path d="M12 4l1.465 1.638a2 2 0 1 1 -3.015 .099l1.55 -1.737z"></path>
-                          </svg>
-                    </div>
-                    <div class="md:w-[200px] md:h-[50px] flex justify-center items-center">
-                        <p class="text-lg text-white">24/09/2004</p>
-                    </div>
+    Sección contenedor "Counter-Section"
+    <section class="w-1/2 h-auto flex flex-row justify-center items-start text-center border border-green-500">
+
+        <section class="w-auto h-auto flex justify-between items-center gap-20 bg-[#3B88C3] rounded-lg border mt-10">
+
+            <div class="w-1/4 h-auto flex flex-col justify-center items-center text-center p-4">
+                <div class="w-full h-auto flex justify-center items-center text-center">
+                    <p class="text-white text-5xl">+10</p>
                 </div>
-                <div class="md:w-[300px] md:h-[50px] flex">
-                    <div class="md:w-[100px] md:h-[50px] flex justify-center items-center gap-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
-                            <path d="M3 7l9 6l9 -6"></path>
-                          </svg>
-                    </div>
-                    <div class="md:w-[200px] md:h-[50px] flex justify-center items-center">
-                        <p class="text-white">mnp.softdev@gmail.com</p>
-                    </div>
-                </div>
-                <div class="md:w-[300px] md:h-[50px] flex">
-                    <div class="md:w-[100px] md:h-[50px] flex justify-center items-center gap-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
-                          </svg>
-                    </div>
-                    <div class="md:w-[200px] md:h-[50px] flex justify-center items-center">
-                        <p class="text-white">+54 9 3525 642046</p>
-                    </div>
+                <div class="w-full h-auto flex justify-center items-center text-center">
+                    <p class="text-gray-400 text-xl leading-tight">Completed <br>projects</p>
                 </div>
             </div>
-            <div class="md:w-[300px] md:h-[150px] inline-block justify-center items-center text-center">
-                <div class="md:w-[300px] md:h-[50px] flex">
-                    <div class="md:w-[100px] md:h-[50px] flex justify-center items-center gap-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-                            <path d="M12 7l4.76 3.45l-1.76 5.55h-6l-1.76 -5.55z"></path>
-                            <path d="M12 7v-4m3 13l2.5 3m-.74 -8.55l3.74 -1.45m-11.44 7.05l-2.56 2.95m.74 -8.55l-3.74 -1.45"></path>
-                          </svg>
-                    </div>
-                    <div class="md:w-[200px] md:h-[50px] flex justify-center items-center">
-                        <p class="text-white">Football</p>
-                    </div>
+
+            <div class="w-1/4 h-auto flex flex-col justify-center items-center text-center">
+                <div class="w-full h-auto flex justify-center items-center text-center">
+                    <p class="text-white text-5xl">+5</p>
                 </div>
-                <div class="md:w-[300px] md:h-[50px] flex">
-                    <div class="md:w-[100px] md:h-[50px] flex justify-center items-center gap-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                            <path d="M14.5 6.5l3 -2.9a2.05 2.05 0 0 1 2.9 2.9l-2.9 3l2.5 7.5l-2.5 2.55l-3.5 -6.55l-3 3v3l-2 2l-1.5 -4.5l-4.5 -1.5l2 -2h3l3 -3l-6.5 -3.5l2.5 -2.5l7.5 2.5z"></path>
-                          </svg>
-                    </div>
-                    <div class="md:w-[200px] md:h-[50px] flex justify-center items-center">
-                        <p class="text-white">Travell</p>
-                    </div>
-                </div>
-                <div class="md:w-[300px] md:h-[50px] flex">
-                    <div class="md:w-[100px] md:h-[50px] flex justify-center items-center gap-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                            <path d="M10 19h-6a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1h6a2 2 0 0 1 2 2a2 2 0 0 1 2 -2h6a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-6a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2z"></path>
-                            <path d="M12 5v16"></path>
-                            <path d="M7 7h1"></path>
-                            <path d="M7 11h1"></path>
-                            <path d="M16 7h1"></path>
-                            <path d="M16 11h1"></path>
-                            <path d="M16 15h1"></path>
-                          </svg>
-                    </div>
-                    <div class="md:w-[200px] md:h-[50px] flex justify-center items-center">
-                        <p class="text-white">Study</p>
-                    </div>
+                <div class="w-full h-auto flex justify-center items-center text-center">
+                    <p class="text-gray-400 text-xl leading-tight">Completed collaborations</p>
                 </div>
             </div>
-        </div>
-        <div class="md:w-[600px] md:h-[130px] md:mt-[30px] flex justify-center items-center gap-14">
-            <p class="p-10 text-white text-xl">I consider myself a person predisposed to learning new technologies, with a high level of optimism, capable of achieving continuous improvements and 
-                promoting teamwork with total responsibility.
-            </p>
-        </div>
+
+            <div class="w-1/4 h-auto flex flex-col justify-center items-center text-center">
+                <div class="w-full h-auto flex justify-center items-center text-center">
+                    <p class="text-white text-5xl">+3</p>
+                </div>
+                <div class="w-full h-auto flex justify-center items-center text-center">
+                    <p class="text-gray-400 text-xl leading-tight">Years of <br>experience</p>
+                </div>
+            </div>
+
+            <div class="w-1/4 h-auto flex flex-col justify-center items-center text-center">
+                <div class="w-full h-auto flex justify-center items-center text-center">
+                    <p class="text-white text-5xl">+8</p>
+                </div>
+                <div class="w-full h-auto flex justify-center items-center text-center">
+                    <p class="text-gray-400 text-xl leading-tight">Developed <br>Skills</p>
+                </div>
+            </div>
+
+        </section>
+
     </section>
-    <section class="md:w-[80px] md:h-[600px] inline-block absolute justify-start items-center text-center md:ml-[50px] md:mt-[100px] rounded-l-2xl bg-[#161616]">
-        <div class="md:w-[80px] md:h-[150px] flex justify-center items-center text-center">
-            <a href="https://web.whatsapp.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
-                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path>
-              </svg>
-            </a>
-        </div>
-        <div class="md:w-[80px] md:h-[150px] flex justify-center items-center text-center">
-            <a href="https://www.instagram.com/mauripucheta1/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                <path d="M16.5 7.5l0 .01"></path>
-              </svg>
-            </a>
-        </div>
-        <div class="md:w-[80px] md:h-[150px] flex justify-center items-center text-center">
-            <a href="https://www.linkedin.com/in/mauricio-nahuel-pucheta-025532239/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-                    <path d="M8 11l0 5"></path>
-                    <path d="M8 8l0 .01"></path>
-                    <path d="M12 16l0 -5"></path>
-                    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-                </svg>
-            </a>
-        </div>
-        <div class="md:w-[80px] md:h-[150px] absolute flex justify-center items-center text-center">
-            <a href="https://gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
-                <path d="M3 7l9 6l9 -6"></path>
-              </svg>
-            </a>
-        </div>
-    </section>
-</main>
+
+-->
 
 <style>
-    .sombraVioleta {
-        box-shadow: 10px 5px 10px rgb(58, 13, 92);
+
+    /*Creación de la animación de rotación*/
+    @keyframes spin-border {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
+
+    /*Estilo base para el borde rotatorio*/
+    .spin-container {
+        position: absolute;
+        inset: 0; /* Asegura que el borde ocupe todo el contenedor */
+        border: 4px solid transparent; /* Todos los bordes transparentes por defecto */
+        border-top: 4px solid #3B88C3; /* Solo el borde superior visible */
+        border-radius: 50%; /* Hace que el borde sea redondo */
+        animation: none; /* Sin animación por defecto */
+        transition: border-color 0.5s ease-in-out; /* Transición suave para completar el borde */
+    }
+
+    /*Activación de la animación*/
+    .spin-container.spin {
+        animation: spin-border 1s linear forwards; /* Gira una vez (360°) */
+    }
+
+    /*Completa el borde después del giro*/
+    .spin-container.complete {
+        border-color: #3B88C3; /* Cambia todos los bordes a azul completo */
+    }
+
+    /*Animación de balanceo*/
+    @keyframes swing {
+        0% {
+            transform: rotate(0deg); /* Posición recta inicial */
+        }
+        25% {
+            transform: rotate(-10deg); /* Se inclina hacia la izquierda */
+        }
+        50% {
+            transform: rotate(10deg); /* Se inclina hacia la derecha */
+        }
+        75% {
+            transform: rotate(-5deg); /* Regresa ligeramente hacia la izquierda */
+        }
+        100% {
+            transform: rotate(0deg); /* Vuelve a la posición recta */
+        }
+    }
+
+    /*Estado inicial*/
+    .animated-svg {
+        display: block;
+        margin: 20px auto;
+        transform: rotate(0deg); /* Recto inicialmente */
+        opacity: 0; /* Invisible */
+        transition: opacity 1s ease; /* Transición suave para la opacidad */
+    }
+
+    /*Animación cuando es visible*/
+    .animated-svg.visible {
+        animation: swing 1.5s ease-in-out; /* Balanceo suave */
+        opacity: 1; /* Se hace visible */
+    }
+
+    /* Sidebar fuera del viewport */
+    .side-content {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-100%); /* Oculto inicialmente */
+        transition: transform 0.7s ease, opacity 0.7s ease, visibility 0s ease; /* Solo transición en transform */
+        left: 0px; /* Alineado con el trigger */
+    }
+
+    /* Sidebar visible */
+    .side-content.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0); /* Desplazado al viewport */
+        transition: transform 0.7s ease, opacity 0.7s ease;
+    }
+
+    /* Trigger en su posición inicial */
+    .menu-trigger {
+        transition: left 0.7s ease; /* Suavidad solo en el movimiento horizontal */
+        left: 0; /* Posición inicial */
+    }
+
+    /* Trigger desplazado hacia la derecha */
+    .menu-trigger.move {
+        left: 40px; /* Alineado con el ancho del sidebar */
+    }
+
+    /*Sombra para tarjetas*/
+    .sombraTarjeta {
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
 </style>
- -->
