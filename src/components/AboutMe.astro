@@ -1,17 +1,17 @@
 ---
 
 ---
-<section class="relative w-full h-auto flex flex-col justify-between bg-white z-10">
+<section class="relative w-full h-auto flex flex-col justify-between bg-white z-10 sectionDark" id="aboutMauricio">
     
-    <div class="w-[900px] h-auto flex flex-col justify-center items-center text-center m-auto">
+    <div class="w-auto h-auto flex flex-col justify-center items-center text-center m-auto">
 
-        <div id="rotating-border" class="w-[250px] h-[250px] rounded-full mt-8 relative">
+        <div id="rotating-border" class="sm:w-[220px] sm:h-[220px] md:w-[250px] md:h-[250px] lg:w-[290px] lg:h-[290px] rounded-full mt-8 relative">
             <div class="absolute inset-0 border-[4px] border-[#3B88C3] border-t-transparent rounded-full spin-container"></div>
             <img src="img/FotoMauri.png" alt="Imagen de Mauri" class="w-full h-full rounded-full object-cover">
         </div>
 
         <div class="w-auto h-auto flex justify-center items-center text-center mt-4">
-            <p class="text-8xl text-[#3B88C3] opacity-0 transition-all duration-1000" id="about-me">About me</p>
+            <p class="sm:text-6xl md:text-6xl lg:text-6xl text-8xl text-[#3B88C3] opacity-0 transition-all duration-1000" id="about-me">About me</p>
         </div>
 
         <div class="menu-trigger bg-[#3B88C3] w-auto h-auto rounded-r-xl cursor-pointer absolute left-0">
@@ -26,31 +26,38 @@
         <div class="side-content flex flex-col gap-6 left-[-100%] w-auto h-auto bg-[#3B88C3] text-white transition-all duration-700 absolute rounded-lg">
 
             <div class="w-auto h-auto flex justify-center items-center text-center p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                    <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"></path>
-                    <path d="M6.343 17.657l-1.414 1.414"></path>
-                    <path d="M6.343 6.343l-1.414 -1.414"></path>
-                    <path d="M17.657 6.343l1.414 -1.414"></path>
-                    <path d="M17.657 17.657l1.414 1.414"></path>
-                    <path d="M4 12h-2"></path>
-                    <path d="M12 4v-2"></path>
-                    <path d="M20 12h2"></path>
-                    <path d="M12 20v2"></path>
+                
+                <button class="w-full h-full cursor-pointer" id="buttonThemeLight">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                        <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"></path>
+                        <path d="M6.343 17.657l-1.414 1.414"></path>
+                        <path d="M6.343 6.343l-1.414 -1.414"></path>
+                        <path d="M17.657 6.343l1.414 -1.414"></path>
+                        <path d="M17.657 17.657l1.414 1.414"></path>
+                        <path d="M4 12h-2"></path>
+                        <path d="M12 4v-2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="M12 20v2"></path>
                   </svg>
+                </button>
+
             </div>
 
             <div class="w-auto h-auto flex justify-center items-center text-center p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
-                    <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
-                  </svg>
+                <button class="w-full h-full cursor-pointer" id="buttonThemeDark">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                        <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+                      </svg>
+                </button>
             </div>
             
         </div>
 
         <div class="w-full h-auto flex justify-center items-center text-center mt-4">
-            <p class="text-black text-xl px-6">I am from Colonia Caroya -Córdoba, graduated as a Software Developer from the Siglo XXI University. Currently, my interests are based on 
-                Web Development, both FrontEnd and BackEnd. I consider myself a person predisposed to learning new technologies, with a high level of optimism, capable of achieving continuous 
-                improvements and promoting teamwork with total responsibility.
+            <p class="sm:text-lg md:text-lg lg:text-lg text-xl sm:px-12 md:px-12 lg:px-20 px-6">I'm from Colonia Caroya - Córdoba, 20 years old and I graduated with a degree in Software Development from Universidad Siglo XXI. Currently, 
+                my interests 
+                focus on web development, both Front-End and Back-End. I consider myself open to learning new technologies, highly optimistic and capable of achieving continuous improvement and promoting 
+                teamwork with complete responsibility.
             </p>
         </div>
 
@@ -58,16 +65,17 @@
 
 </section>
 
-<section class="relative w-full h-auto flex flex-col justify-center items-center text-start px-5 m-auto mt-10 z-10 overflow-hidden">
+<section class="relative w-full h-auto flex flex-col justify-center items-center text-start px-5 m-auto mt-10 z-10 overflow-hidden sectionDark">
 
     <!--Gradiente-->
-    <div class="absolute inset-0 w-full h-[80%] bg-gradient-to-b from-white to-[#3B88C3] z-0"></div>
+    <div class="absolute inset-0 w-full h-[80%] gradientLigth z-0 sectionDarkGradient"></div>
 
     <!--Contenedor de tarjetas-->
-    <div class="w-full h-auto flex flex-row justify-center items-stretch text-center gap-12 z-10">
+    <div class="w-full h-auto flex sm:flex-col md:flex-col lg:flex-row flex-row justify-center items-stretch text-center sm:gap-8 md:gap-8 gap-12 z-10 sm:px-12 md:px-12 lg:px-5">
 
         <!--Tarjeta FrontEnd-->
-        <div class="w-1/4 h-auto flex flex-col justify-start items-center text-center bg-white rounded-lg mt-10 border border-gray-200 sombraTarjeta mb-10">
+        <div class="sm:w-auto md:w-auto lg:w-1/4 w-1/4 h-auto flex flex-col justify-start items-center text-center bg-white rounded-lg sm:mt-0 md:mt-0 lg:mt-0 mt-10 border border-gray-200 sombraTarjeta 
+            sm:mb-0 md:mb-0 lg:mb-10 sectionDark">
 
             <div class="w-[90px] h-[90px] flex justify-center items-center rounded-full bg-[#3B88C3] mt-16">
                 <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="60" height="60" 
@@ -79,20 +87,20 @@
             </div>
 
             <div class="w-full h-auto flex justify-center items-center text-center mt-5">
-                <p class="text-black text-2xl">FrontEnd Developer</p>
+                <p class="text-2xl">FrontEnd Developer</p>
             </div>
 
             <div class="w-full h-auto flex justify-center items-center text-center mt-10">
-                <p class="text-black text-lg font-light px-10">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+                <p class="text-lg font-light px-10">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
             </div>
 
             <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-10">
-                <p class="text-black text-lg">Languages I speak:</p>
+                <p class="text-lg">Languages I speak:</p>
                 <p class="text-[#3B88C3] mt-2">HTML5, CSS3, JavaScript</p>
             </div>
 
             <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-5 mb-5">
-                <p class="text-black text-lg">FrontEnd Tools:</p>
+                <p class="text-lg">FrontEnd Tools:</p>
                 <a href="https://code.visualstudio.com/" target="_blank" class="w-auto h-auto mt-2 text-[#3B88C3]">VS Code</a>
                 <a href="https://astro.build/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Astro</a>
                 <a href="https://tailwindcss.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">Tailwind</a>
@@ -108,7 +116,8 @@
         </div>
 
         <!--Tarjeta BackEnd-->
-        <div class="w-1/4 min-h-[600px] h-auto flex flex-col justify-start items-center text-center bg-white rounded-lg mt-10 border border-gray-200 sombraTarjeta mb-10">
+        <div class="sm:w-auto md:w-auto lg:w-1/4 w-1/4 h-auto flex flex-col justify-start items-center text-center bg-white rounded-lg sm:mt-0 md:mt-0 lg:mt-0 mt-10 border border-gray-200 sombraTarjeta 
+            sm:mb-0 md:mb-0 lg:mb-10 sectionDark">
 
             <div class="w-[90px] h-[90px] flex justify-center items-center rounded-full bg-[#3B88C3] mt-16">
                 <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="60" height="60" 
@@ -120,20 +129,20 @@
             </div>
 
             <div class="w-full h-auto flex justify-center items-center text-center mt-5">
-                <p class="text-black text-2xl">BackEnd Developer</p>
+                <p class="text-2xl">BackEnd Developer</p>
             </div>
 
             <div class="w-full h-auto flex justify-center items-center text-center mt-10">
-                <p class="text-black text-lg font-light px-10">I enjoy building robust systems to bring ideas to life invisibly.</p>
+                <p class="text-lg font-light px-10">I enjoy building robust systems to bring ideas to life invisibly.</p>
             </div>
 
             <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-10">
-                <p class="text-black text-lg">Languages I speak:</p>
+                <p class="text-lg">Languages I speak:</p>
                 <p class="text-[#3B88C3] mt-2">SQL, NoSQL</p>
             </div>
 
             <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-5 mb-5">
-                <p class="text-black text-lg">BackEnd Tools:</p>
+                <p class="text-lg">BackEnd Tools:</p>
                 <a href="https://www.postgresql.org/" target="_blank" class="w-auto h-auto mt-2 text-[#3B88C3]">PostgreSQL</a>
                 <a href="https://www.mongodb.com/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">MongoDB</a>
                 <a href="https://www.sqlite.org/" target="_blank" class="w-auto h-auto mt-1 text-[#3B88C3]">SQLite</a>
@@ -149,7 +158,8 @@
         </div>
 
         <!--Tarjeta UX/UI-->
-        <div class="w-1/4 min-h-[600px] h-auto flex flex-col justify-start items-center text-center bg-white rounded-lg mt-10 border border-gray-200 sombraTarjeta mb-10">
+        <div class="sm:w-auto md:w-auto lg:w-1/4 w-1/4 h-auto flex flex-col justify-start items-center text-center bg-white rounded-lg sm:mt-0 md:mt-0 lg:mt-0 mt-10 border border-gray-200 sombraTarjeta 
+            sm:mb-0 md:mb-0 lg:mb-10 sectionDark">
 
             <div class="w-[90px] h-[90px] flex justify-center items-center rounded-full bg-[#3B88C3] mt-16">
                 <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" width="60" height="60" 
@@ -162,20 +172,20 @@
             </div>
 
             <div class="w-full h-auto flex justify-center items-center text-center mt-5">
-                <p class="text-black text-2xl">Designer</p>
+                <p class="text-2xl">Designer</p>
             </div>
 
             <div class="w-full h-auto flex justify-center items-center text-center mt-10">
-                <p class="text-black text-lg font-light px-10">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+                <p class="text-lg font-light px-10">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
             </div>
 
             <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-10">
-                <p class="text-black text-lg">Things I enjoy designing:</p>
+                <p class="text-lg">Things I enjoy designing:</p>
                 <p class="text-[#3B88C3] mt-2">UX, UI, Web, Apps, Logos</p>
             </div>
 
             <div class="w-full h-auto flex flex-col justify-center items-center text-center mt-5 mb-5">
-                <p class="text-black text-lg">Design Tools:</p>
+                <p class="text-lg">Design Tools:</p>
                 <a href="https://www.figma.com/" target="_blank" class="w-auto h-auto mt-2 text-[#3B88C3]">Figma</a>
                 <a href="https://www.canva.com/" target="_blank" class="w-auto h-auto mt-2 text-[#3B88C3]">Canva</a>
             </div>
@@ -185,54 +195,6 @@
     </div>
 
 </section>
-
-<!--
-    Sección contenedor "Counter-Section"
-    <section class="w-1/2 h-auto flex flex-row justify-center items-start text-center border border-green-500">
-
-        <section class="w-auto h-auto flex justify-between items-center gap-20 bg-[#3B88C3] rounded-lg border mt-10">
-
-            <div class="w-1/4 h-auto flex flex-col justify-center items-center text-center p-4">
-                <div class="w-full h-auto flex justify-center items-center text-center">
-                    <p class="text-white text-5xl">+10</p>
-                </div>
-                <div class="w-full h-auto flex justify-center items-center text-center">
-                    <p class="text-gray-400 text-xl leading-tight">Completed <br>projects</p>
-                </div>
-            </div>
-
-            <div class="w-1/4 h-auto flex flex-col justify-center items-center text-center">
-                <div class="w-full h-auto flex justify-center items-center text-center">
-                    <p class="text-white text-5xl">+5</p>
-                </div>
-                <div class="w-full h-auto flex justify-center items-center text-center">
-                    <p class="text-gray-400 text-xl leading-tight">Completed collaborations</p>
-                </div>
-            </div>
-
-            <div class="w-1/4 h-auto flex flex-col justify-center items-center text-center">
-                <div class="w-full h-auto flex justify-center items-center text-center">
-                    <p class="text-white text-5xl">+3</p>
-                </div>
-                <div class="w-full h-auto flex justify-center items-center text-center">
-                    <p class="text-gray-400 text-xl leading-tight">Years of <br>experience</p>
-                </div>
-            </div>
-
-            <div class="w-1/4 h-auto flex flex-col justify-center items-center text-center">
-                <div class="w-full h-auto flex justify-center items-center text-center">
-                    <p class="text-white text-5xl">+8</p>
-                </div>
-                <div class="w-full h-auto flex justify-center items-center text-center">
-                    <p class="text-gray-400 text-xl leading-tight">Developed <br>Skills</p>
-                </div>
-            </div>
-
-        </section>
-
-    </section>
-
--->
 
 <style>
 
@@ -329,9 +291,31 @@
         left: 40px; /* Alineado con el ancho del sidebar */
     }
 
-    /*Sombra para tarjetas*/
-    .sombraTarjeta {
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    /*Sombra en tema claro*/
+    .light-theme .sombraTarjeta {
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5); /* Sombra negra más pronunciada */
+    }
+
+    /*Sombra en tema oscuro*/
+    .dark-theme .sombraTarjeta {
+        box-shadow: 0px 5px 15px rgba(212, 212, 212, 0.171); /* Sombra blanca más ligera */
+    }
+
+    /* Tema Oscuro */
+    .dark-theme {
+        background-color: #121212;
+        color: #E0E0E0;
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    /* Gradiente en modo claro */
+    .gradientLigth {
+        background: linear-gradient(to bottom, white, #3B88C3);
+    }
+
+    /* Gradiente en modo oscuro */
+    .gradientDark {
+        background: linear-gradient(to bottom, #121212, #3B88C3);
     }
 
 </style>

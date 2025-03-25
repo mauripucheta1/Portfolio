@@ -1,5 +1,50 @@
-//Selecciono el div que quiero que sea dinámico
-const divHeroSection = document.getElementById('contenidoDinamico');
+/*
+//Animación de telón
+document.addEventListener("DOMContentLoaded", () => {
+  // Animación del telón (splash)
+  gsap.to("#splash", {
+    y: "-100%", // Mueve el telón hacia arriba fuera de la pantalla
+    duration: 1.5, // Duración de la animación en segundos
+    ease: "power2.inOut", // Efecto de suavizado
+    onUpdate: function () {
+      // Obtén progreso de la animación y ajusta opacidad del contenido principal
+      const progress = this.progress(); // Progreso de la animación (entre 0 y 1)
+      const mainContent = document.getElementById("main-content");
+      if (mainContent) {
+        mainContent.style.opacity = progress; // Gradualmente aumenta la opacidad
+      }
+    },
+    onComplete: function () {
+      // Oculta el telón y asegura que el contenido sea visible
+      const splash = document.getElementById("splash");
+      const mainContent = document.getElementById("main-content");
+
+      if (splash && mainContent) {
+        splash.style.display = "none"; // Oculta el telón completamente
+        mainContent.classList.remove("hidden"); // Muestra el contenido principal
+        mainContent.style.opacity = 1; // Garantiza opacidad total
+      }
+    }
+  });
+});
+*/
+
+//Animación header
+//Seleccionamos todos los enlaces dentro del header
+const links = document.querySelectorAll('header a');
+
+links.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault(); //Evitamos el comportamiento predeterminado del enlace
+        const sectionId = link.getAttribute('href'); //Obtenemos el ID de la sección
+        const section = document.querySelector(sectionId); //Seleccionamos la sección
+
+        section.scrollIntoView({
+            behavior: 'smooth', //Desplazamiento suave
+            block: 'start' //Alinea al inicio de la sección
+        });
+    });
+});
 
 //Creo la función de cambiar contenido junto con la animación CSS
 function cambiarContenidoAnimico() {
