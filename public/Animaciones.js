@@ -1,4 +1,3 @@
-/*
 //Animación de telón
 document.addEventListener("DOMContentLoaded", () => {
   // Animación del telón (splash)
@@ -27,11 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-*/
 
 //Animación header
 //Seleccionamos todos los enlaces dentro del header
-const links = document.querySelectorAll('header a');
+const links = document.querySelectorAll('.funtionalA');
 
 links.forEach(link => {
     link.addEventListener('click', (event) => {
