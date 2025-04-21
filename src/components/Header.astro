@@ -8,13 +8,13 @@ lg: Desde 1024px hasta 1279px. (Laptos estándar o monitores pequeños)
 xl: Desde 1280px hasta 1535px. (Monitores grandes)
 2xl: 1536px en adelante. (Monitores ultra grandes)
 -->
-<header class="w-full h-auto absolute top-0 flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-between items-center text-center z-30 sombraCaja sectionDark">
+<header class="w-full h-auto absolute top-0 flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-between items-center text-center z-30 sombraCaja">
 
     <div class="w-full h-auto flex justify-center xl:justify-start xl:ml-10 items-center mb-5 mt-10">
         <a href="/" class="w-auto h-auto text-4xl">
             <div class="w-full h-auto flex flex-row justify-between items-center text-center gap-5">
                 <img src="img/FaviconMauri.png" alt="Favicon Mauri" class="w-[35px] h-[35px] border-2 border-white rounded-lg">
-                <p class="text-4xl">Mauricio Pucheta</p>
+                <p class="text-4xl text-white">Mauricio Pucheta</p>
             </div>
         </a>
     </div>
@@ -22,10 +22,10 @@ xl: Desde 1280px hasta 1535px. (Monitores grandes)
     <nav class="w-full md:w1/3 h-auto flex sm:justify-center md:justify-center lg:justify-end items-center mt-0 sm:mt-0 md:mt-0 lg:mt-10 xl:mt-10 2xl:mt-10 mb-5">
 
         <div class="w-auto h-auto flex flex-col sm:flex-col md:flex-col lg:flex-row gap-2 sm:gap-2 md:gap-2 lg:gap-6 xl:gap-8 lg:mr-12 xl:mr-18 2xl:mr-18 m-auto">
-            <a href="#aboutMauricio" class="w-auto h-auto font-normal underline-animated text-lg xl:text-xl funtionalA">About me</a>
-            <a href="#projectsMauricio" class=" w-auto h-autofont-normal underline-animated text-lg xl:text-xl funtionalA">Projects</a>
-            <a href="#contactMauricio" class="w-auto h-auto font-normal underline-animated text-lg xl:text-xl funtionalA">Contact</a>
-            <a href="https://drive.google.com/uc?export=download&id=1XtuyWIQLnG3uic76t0dGRC8inNWFJXrh" class="w-auto h-auto font-normal underline-animated text-lg xl:text-xl"
+            <a href="#aboutMauricio" class="w-auto h-auto font-normal underline-animated text-lg xl:text-xl funtionalA text-white">About me</a>
+            <a href="#projectsMauricio" class=" w-auto h-autofont-normal underline-animated text-lg xl:text-xl funtionalA text-white">Projects</a>
+            <a href="#contactMauricio" class="w-auto h-auto font-normal underline-animated text-lg xl:text-xl funtionalA text-white">Contact</a>
+            <a href="https://drive.google.com/uc?export=download&id=1XtuyWIQLnG3uic76t0dGRC8inNWFJXrh" class="w-auto h-auto font-normal underline-animated text-lg xl:text-xl text-white"
                 download="CV Mauricio Nahuel Pucheta">Download CV
             </a>
         </div>
@@ -70,14 +70,8 @@ xl: Desde 1280px hasta 1535px. (Monitores grandes)
     }
 
     .sombraCaja {
-        box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.5);
-    }
-
-    /* Tema Oscuro */
-    .dark-theme {
-        background-color: #121212;
-        color: #E0E0E0;
-        transition: background-color 0.5s ease, color 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.2); 
+        backdrop-filter: blur(4px); 
     }
 
 </style>
